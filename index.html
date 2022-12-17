@@ -1,4 +1,5 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset='utf-8'>
         <title>ピクロス</title>
@@ -6,13 +7,22 @@
         <link rel='stylesheet' href='nonogram.css'>
         <script src='nonogram.js'></script>
     </head><body>
-	    <table><tbody id="main"></tbody></table><br>
-        <button id="1">盤面を生成↑</button>
-	<button id="2">↓テキストを生成</button><br><br>
-        <textarea id="code"></textarea><br>
-        <span id=message>
-            &lt;sample&gt;<br>10 10<br>3/1/1 5/5/0/5/1 1/1 1/1 1/5<br>1 5/1 1 1 1/1 1 1 1/4 1 1/1 5/1/1/1/1/1
-        </span>
-        <style id="leftmost"></style>
+        <div><table><tbody id="main"></tbody></table></div>
+        <div style="margin: 5px 0px;">
+            <button id="1">盤面を生成↑</button>
+            <button id="2">↓テキストを生成</button>　
+            塗り色:
+            <button name="color-radio" value="black" class="selected"></button>
+            <button name="color-radio" value="red"></button>
+            <button name="color-radio" value="green"></button>
+            <button name="color-radio" value="blue"></button>
+            <button name="color-radio" value="cyan"></button>
+            <button name="color-radio" value="magenta"></button>
+            <button name="color-radio" value="orange"></button>　
+            <button id="undo" title="Ctrl+Z">☜ UNDO</button>
+            <button id="redo" title="Ctrl+Y">REDO ☞</button>
+        </div>
+        <div><textarea id="code"></textarea></div>
+        <span id=message></span>
     </body>
 </html>
