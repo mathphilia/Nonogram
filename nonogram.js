@@ -140,7 +140,7 @@ onload = () => {
             if(index % cols == 0){
                 continue;
             }
-            elem = tdElems[index];
+            let elem = tdElems[index];
             data[index] = 2;
 
             elem.onmousedown = function(){
